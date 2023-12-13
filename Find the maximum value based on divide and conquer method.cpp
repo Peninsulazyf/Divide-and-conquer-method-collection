@@ -17,17 +17,17 @@ int max(int list[],int l,int r)
 int main()
 {
 	int num;
-	printf("请输入整数个数：");
+	printf("Please enter an integer number:");
 	scanf("%d",&num);
 	int list[num];
 	for(int i=0;i<num;i++)
 	{
 		int temp;
-		printf("请输入第%d个数:",i+1);
+		printf("Please enter the %dth number:",i+1);
 		scanf("%d",&temp);
 		list[i]=temp;	
 	}
 	num=max(list,0,num-1); 
-	printf("最大的数为:%d",num);
+	printf("The largest number is: %d",num);
 	return 0;	
 } 
